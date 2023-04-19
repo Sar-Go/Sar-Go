@@ -1,2 +1,2 @@
-# Sarthak-Goel.github.io
+# Sar-Go.github.io
 Portfolio Website
