@@ -11,6 +11,22 @@
           border:1px solid black;
         }
         </style>
+        <script>
+          function popUp(){
+    var popup = document.createElement('div');
+    popup.className = 'popup';
+    popup.id = 'test';
+    var cancel = document.createElement('div');
+    cancel.className = 'cancel';
+    cancel.innerHTML = 'X';
+    cancel.onclick = function (e) { popup.parentNode.removeChild(popup) };
+    var message = document.createElement('span');
+    message.innerHTML = "More information ";
+    popup.appendChild(message);                                    
+    popup.appendChild(cancel);
+    document.body.appendChild(popup);
+    }
+        </script>
 </head>
 <body>
   <div class="topnav">
@@ -20,11 +36,11 @@
     <a href="explore.html">Explore</a>
   </div>
 
-<h1>Certfication</h1>
-<h1>Publications</h1>
-<h1>Coding Footprint</h1>
-<h1>Interests</h1>
-<h1>Extra-curricular</h1>
-<h1>Mentorship activities</h1>
-<h1>Co-curricular</h1>
+<h1>Certfication</h1> <button onClick="popUp();" align="center">Click for more Info! </button> 
+<h1>Publications</h1>  <button onClick="popUp();" align="center">Click for more Info! </button>
+<h1>Coding Footprint</h1>  <button onClick="popUp();" align="center">Click for more Info! </button>
+<h1>Interests</h1>  <button onClick="popUp();" align="center">Click for more Info! </button>
+<h1>Extra-curricular</h1>  <button onClick="popUp();" align="center">Click for more Info! </button>
+<h1>Mentorship activities</h1>  <button onClick="popUp();" align="center">Click for more Info! </button>
+<h1>Co-curricular</h1>  <button onClick="popUp();" align="center">Click for more Info! </button>
   </body>
