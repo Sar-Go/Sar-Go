@@ -1,56 +1,63 @@
-/* blink {
-    -webkit-animation: 0.2s linear infinite condemned_blink_effect; /* for Safari 4.0 - 8.0 */
-/*    animation: 0.2s linear infinite condemned_blink_effect;
-  }
- 
-  /* for Safari 4.0 - 8.0 */
-/*  @-webkit-keyframes condemned_blink_effect {
-    0% {
-      visibility: hidden;
-    }
-    50% {
-      visibility: hidden;
-    }
-    100% {
-      visibility: visible;
-    }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
   }
   
-  @keyframes condemned_blink_effect {
-    0% {
-      visibility: hidden;
-    }
-    50% {
-      visibility: hidden;
-    }
-    100% {
-      visibility: visible;
-    }
-  } 
- */             body {
-                margin: 0;
-                font-family: Arial, Helvetica, sans-serif;
-              }
-              
-              .topnav {
-                overflow: hidden;
-                background-color: #71091E;
-                text-align: center;
-              }
-              
-              .topnav a {
-                float: left;
-                color: #f2f2f2;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                font-size: 17px;
-              }
-              
-              .topnav a:hover {
-                background-color: #eb9997;
-                color: black;
-              }
-              h3, h2, h5{
-                padding-left: 12px;
-              }
+  .topnav {
+  overflow: hidden;
+  background-color: #71091E;
+  text-align: center;
+  }
+  
+  .topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  }
+  
+  .topnav a:hover {
+  background-color: #eb9997;
+  color: black;
+  }
+  h3, h2, h5{
+  padding-left: 12px;
+}
+.popup{
+  position:absolute;
+  top:50px;
+  left:200px;
+  margin:100px auto;
+  width:400px;
+  height:150px;
+  font-family:verdana;
+  font-size:13px;
+  padding:10px;
+  background-color:rgb(225, 224, 240);
+  border:2px solid grey;
+  z-index:100000000000000000;
+  }
+  
+.cancel{
+  display:relative;
+  cursor:pointer;
+  margin:0;
+  float:right;
+  height:10px;
+  width:14px;
+  padding:0 0 5px 0;
+  background-color:red;
+  text-align:center;
+  font-weight:bold;
+  font-size:11px;
+  color:black;
+  border-radius:2px;
+  z-index:100000000000000000;
+  }
+
+.cancel:hover{
+  background:rgb(64, 26, 167);
+  }
+  
